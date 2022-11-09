@@ -1,0 +1,33 @@
+### Profile login
+
+POST http://localhost:5050/api/users/login
+Content-Type: application/json
+
+{
+  "email": "adminEmail@gmail.com",
+  "password": "adminPassword"
+}
+
+### Create new folder
+
+POST http://localhost:5050/api/folders/create
+Content-Type: application/json
+
+{
+  "title": "test"
+}
+
+### Add chat to folder
+
+POST http://localhost:5050/api/folders/addChat
+Content-Type: application/json
+
+{
+  "id": "6364373255ff5b1abaaf092a",
+  "chatId": "6364364da2cd1b3d14471b3a"
+}
+
+### Get all chats
+
+GET http://localhost:5050/api/folders/getAll
+Content-Type: application/json
